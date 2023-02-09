@@ -1,16 +1,16 @@
 
 const express = require("express")
-const { connect } = require("../config/db")
+const { connect } = require("./config/db")
 const cors = require("cors");
 require('dotenv').config();
 
 // Routes here 
-const { UserAuthRoutes } = require("../Routes/UserAuth.Routes")
-const { ValentineDay } = require("../Routes/Valentine-Day.Routes")
-const { GiftBasketsFood } = require("../Routes/Gift-Baskets-Food.Routes");
-const { LavenderGifts } = require("../Routes/lavender-gifts.Routes");
-const { BirthdayFlowers } = require("../Routes/Birthday-Flowers.Routes");
-const { UserCartData } = require("../Routes/User_Cart_Data.Routes");
+const { UserAuthRoutes } = require("./Routes/UserAuth.Routes")
+const { ValentineDay } = require("./Routes/Valentine-Day.Routes")
+const { GiftBasketsFood } = require("./Routes/Gift-Baskets-Food.Routes");
+const { LavenderGifts } = require("./Routes/lavender-gifts.Routes");
+const { BirthdayFlowers } = require("./Routes/Birthday-Flowers.Routes");
+const { UserCartData } = require("./Routes/User_Cart_Data.Routes");
 
 
 const app = express()
